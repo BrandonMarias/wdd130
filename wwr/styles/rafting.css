@@ -1,0 +1,139 @@
+/* 1. Variables de diseño */
+:root {
+  --primary-color: #1a3c5a;   /* Azul oscuro de los títulos y barras */
+  --secondary-color: #f4a261; /* Arena / Acento cálido */
+  --accent1-color: #2b4c6f;   /* Azul pizarra para fondos de texto */
+  --accent2-color: #ffffff;   /* Blanco */
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* 2. Reset del box-model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: #333333;
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #0b4f8a;
+  font-size: 0.95rem;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  padding: 12px 16px;
+  text-align: center;
+  font-family: var(--heading-font);
+  background-color: rgba(26, 60, 90, 0.85);
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(26, 60, 90, 0.85);
+  color: #ffffff;
+  padding: 16px;
+}
+
+.hero article img {
+  float: right;
+  width: 80px;
+  height: auto;
+  margin-left: 16px;
+  border: 2px solid #ffffff;
+}
+
+.hero article p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+section {
+  margin-top: 24px;
+}
+
+section h2 {
+  font-family: var(--heading-font);
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+section p {
+  padding: 16px 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 32px;
+  padding: 16px 0 24px 0;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 12px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  display: block;
+}
