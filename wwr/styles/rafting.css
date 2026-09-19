@@ -38,11 +38,12 @@ header nav ul {
 
 header nav ul li a {
   text-decoration: none;
-  color: #0b4f8a;
+  color: var(--accent1-color);
   font-size: 0.95rem;
 }
 
 header nav ul li a:hover {
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
@@ -64,7 +65,7 @@ header nav ul li a:hover {
   text-align: center;
   font-family: var(--heading-font);
   background-color: rgba(26, 60, 90, 0.85);
-  color: #ffffff;
+  color: var(--accent2-color);
   font-size: 1.8rem;
 }
 
@@ -74,7 +75,7 @@ header nav ul li a:hover {
   left: 20px;
   right: 20px;
   background-color: rgba(26, 60, 90, 0.85);
-  color: #ffffff;
+  color: var(--accent2-color);
   padding: 16px;
 }
 
@@ -83,7 +84,7 @@ header nav ul li a:hover {
   width: 80px;
   height: auto;
   margin-left: 16px;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--accent2-color);
 }
 
 .hero article p {
@@ -99,7 +100,7 @@ section {
 section h2 {
   font-family: var(--heading-font);
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: var(--accent2-color);
   text-align: center;
   padding: 10px;
   font-size: 1.2rem;
