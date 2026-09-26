@@ -1,9 +1,8 @@
 :root {
   --primary-color: #1a3c5a;
-  --secondary-color: #f4a261;
   --accent1-color: #2b4c6f;
   --accent2-color: #ffffff;
-  --neutral-bg: #e6e0f3; /* Fondo suave estilo wireframe */
+  --neutral-bg: #e6e0f3;
   --border-color: #333333;
   --heading-font: "Georgia", "Times New Roman", serif;
   --body-font: Arial, Helvetica, sans-serif;
@@ -128,6 +127,7 @@ header nav ul li a:hover {
 }
 
 .hero article img {
+  float: right;
   width: 85px;
   height: 85px;
   object-fit: cover;
